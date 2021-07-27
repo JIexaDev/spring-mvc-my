@@ -19,6 +19,9 @@ public class CarServiceIml implements CarService {
 
     @Override
     public List<Car> getListCar(int count) {
-        return carList.subList(0, count+1);
+        if (!(count >= 1 && count <= 5)) {
+            count = 5;
+        }
+        return carList.subList(0, count);
     }
 }
