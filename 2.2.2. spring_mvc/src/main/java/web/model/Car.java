@@ -15,28 +15,16 @@ public class Car {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getModel() {
         return model;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
     }
 
     public int getSeries() {
         return series;
     }
 
-    public void setSeries(int series) {
-        this.series = series;
-    }
-
     @Override
     public String toString() {
-        return "Car: model - " + model + "; series - " + series;
+        return "Car: Id - " + id + "; model - " + model + "; series - " + series;
     }
 }
